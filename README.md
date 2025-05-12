@@ -9,7 +9,7 @@ This is the frontend of the **Elderee App**, built using **React Native + Expo R
 - **NativeWind** (Tailwind CSS for React Native)
 - **TypeScript**
 - **Git + GitHub for version control**
-- **The main branch is the production branch DO NOT TOUCH**
+- **The dev branch is the production branch DO NOT TOUCH**
 - **We work from the staging branch, you push and pull from there**
 
 
