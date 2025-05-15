@@ -1,27 +1,49 @@
 {
-  "name": "project",
+  "name": "elderee",
   "version": "1.0.0",
   "main": "./node_modules/expo-router/entry",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build-backend": "tsc --build ",
+    "dev-backend": "cross-env NODE_ENV=development nodemon backend/api/src/server.ts",
+    "start-backend": "npm run build-backend && NODE_ENV=production npm dist/server.js"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.5.0",
     "expo": "~52.0.46",
+    "expo-router": "~4.0.20",
     "expo-status-bar": "~2.0.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.3",
+    "morgan": "^1.10.0",
     "nativewind": "^4.1.23",
+    "nodemon": "^3.1.10",
     "react": "18.3.1",
     "react-native": "0.76.9",
     "react-native-reanimated": "3.16.2",
     "react-native-safe-area-context": "4.12.0",
     "tailwindcss": "3.4.17",
-    "expo-router": "~4.0.20"
+    "zod": "^3.24.4"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/morgan": "^1.9.9",
     "@types/react": "~18.3.12",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "private": true
