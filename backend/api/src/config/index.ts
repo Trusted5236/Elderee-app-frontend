@@ -7,4 +7,4 @@ export const { PORT, JWT_LIFETIME, JWT_SECRET, NODE_ENV, ORIGIN, CREDENTIALS } =
 export const MONGO_URI =
 	process.env.NODE_ENV === "production"
 		? process.env.MONGO_URI
-		: "mongodb://127.0.0.1:27017/quiz-api";
+		: `mongodb+srv://ajibewadannyboi:ahOXT74V5yLKoFUD@danielcluster.fd5sg.mongodb.net/eldereedb?retryWrites=true&w=majority&appName=danielcluster`;
