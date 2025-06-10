@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.elderee"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -29,6 +30,15 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "b3a08733-a15b-4428-a0e9-394c0878bdc5"
+      }
+    },
+    "owner": "blessed_01"
   }
 }
