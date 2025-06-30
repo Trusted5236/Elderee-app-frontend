@@ -1,44 +1,49 @@
 {
   "expo": {
-    "name": "note",
-    "slug": "note",
-    "scheme": "note",
+    "name": "elderee-app-frontend",
+    "slug": "elderee-app-frontend",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/images/icon.png",
+    "scheme": "eldereeappfrontend",
+    "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "entryPoint": "./node_modules/expo-router/entry",
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.elderee"
+      "edgeToEdgeEnabled": true,
+      "package": "elderee.com"
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro"
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
     ],
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "b3a08733-a15b-4428-a0e9-394c0878bdc5"
-      }
+    "experiments": {
+      "typedRoutes": true
     },
-    "owner": "blessed_01"
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "bbf17f0a-c26e-413f-98c3-1db8354ac3d4"
+      }
+    }
   }
 }
